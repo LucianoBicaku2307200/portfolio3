@@ -1,0 +1,15 @@
+.backToTop {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  background-color: black;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  z-index: 200;
+  img {
+    transform: rotate(-90deg);
+    filter: contrast(0);
+  }
+}

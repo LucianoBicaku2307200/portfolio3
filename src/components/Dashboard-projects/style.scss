@@ -1,0 +1,107 @@
+.dashboard-projects {
+  width: 100%;
+  .projects {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &-item {
+      position: relative;
+      border-radius: 20px;
+      margin: 10px 0;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.25);
+      img {
+        object-fit: cover;
+        width: 100%;
+        filter: blur(3px);
+      }
+      .img-container {
+        position: relative;
+        button {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 4px 6px;
+          color: white;
+          border: none;
+          outline: none;
+          border-radius: 4px;
+          background: #8d93ab;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            background: white;
+            color: #8d93ab;
+          }
+        }
+      }
+      input,
+      textarea {
+        padding: 2px 4px;
+        border-radius: 4px;
+        border: 1px solid gray;
+        width: 100%;
+      }
+      .title {
+        margin-top: 22px;
+        margin-bottom: 13px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      .description {
+      }
+      .links,
+      .description {
+        font-size: 14px;
+        margin-bottom: 13px;
+      }
+
+      .edit-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-radius: 50%;
+        background-color: rgb(219, 228, 242);
+        display: flex;
+        padding: 3px;
+        cursor: pointer;
+      }
+      .buttons {
+        display: flex;
+        gap: 10px;
+
+        button {
+          background-color: #8d93ab;
+          color: #f1f3f8;
+          border: 1px solid #8d93ab;
+          border-radius: 10px;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all ease-in-out 0.5s;
+          padding: 6px 12px;
+          &:hover {
+            background-color: transparent;
+            color: black;
+          }
+        }
+        .delete {
+          background-color: red;
+          border: 1px solid red;
+          &:hover {
+            background-color: transparent;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}

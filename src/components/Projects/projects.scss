@@ -1,0 +1,120 @@
+.projects {
+  position: relative;
+  padding-bottom: 100px;
+  @media (max-width: 600px) {
+    padding: 100px 0;
+  }
+  overflow: hidden;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   right: 0;
+  //   background-color: white;
+  //   width: 50%;
+  //   transform: translateX(20%);
+  //   height: 100%;
+  //   z-index: -1;
+  //   top: 0;
+  // }
+  &-header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    div:nth-child(1) {
+      width: 50%;
+      @media (max-width: 768px) {
+        width: 70%;
+      }
+      @media (max-width: 768px) {
+        width: 80%;
+      }
+    }
+    p {
+      margin-top: 20px;
+    }
+  }
+  .nav-button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    &:hover {
+      background-color: #dbe4f2;
+    }
+  }
+  .next {
+  }
+  .prev {
+    transform: rotateY(180deg);
+  }
+  .slider {
+    &-nav {
+      display: flex;
+      gap: 5px;
+      margin-right: 25%;
+      transform: translateX(100%);
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &-item {
+      border-radius: 20px;
+      margin: 10px 0;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.25);
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      .div {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+      }
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 150px;
+      }
+      h3 {
+        margin-top: 22px;
+        margin-bottom: 13px;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 13px;
+      }
+      .buttons {
+        margin-top: auto;
+        display: flex;
+        gap: 10px;
+        .error {
+          pointer-events: none;
+        }
+        a {
+          background-color: #8d93ab;
+          color: #f1f3f8;
+          border: 1px solid #8d93ab;
+          border-radius: 10px;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all ease-in-out 0.5s;
+          padding: 6px 12px;
+          &:hover {
+            background-color: transparent;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
