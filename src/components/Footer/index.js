@@ -27,10 +27,6 @@ const Footer = () => {
         </div>
       </div>
       <div className="content">
-        <p>
-          Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-          anteposuerit litterarum formas{" "}
-        </p>
         <div className="extra-info">
           <div>
             <h3>My phone number</h3>

@@ -26,10 +26,6 @@ const Skills = () => {
     <section className="skills" id="skills">
       <div className="text" data-scroll data-scroll-speed="-0.5">
         <h2>My Skills</h2>
-        <p>
-          So we are glad to invite you all into our club to dance on the best
-          music to all time best noise..
-        </p>
       </div>
 
       <Swiper

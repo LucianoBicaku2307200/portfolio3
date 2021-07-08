@@ -38,10 +38,6 @@ const RecentProjects = () => {
       <div className="projects-header">
         <div>
           <h2>Latest Projects</h2>
-          <p>
-            So we are glad to invite you all into our club to dance on the best
-            music to all time best noise..
-          </p>
         </div>
         <div className="slider-nav">
           <div className="nav-button prev">
