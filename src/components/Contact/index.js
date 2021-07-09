@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <section className="contact" id="contact">
       <h2>Contact me</h2>
-      <p>some text here</p>
+      <p>Let's do awesome things.</p>
       <Formik
         initialValues={{
           name: "",
